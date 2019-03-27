@@ -1,0 +1,12 @@
+body {
+    background-color: #f9b468 !important;
+}
+
+.page-head {
+    background: #ffb969;
+    padding: 24px;
+}
+
+.headings {
+    font-family: "Century Gothic", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
