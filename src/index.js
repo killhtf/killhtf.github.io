@@ -27,11 +27,11 @@ class MainPage extends React.Component {
                 </Header>
                 <Content>
                     <div className="page-head">
-                        <Row gutter={16} align="middle">
-                            <Col span={6}>
+                        <Row type="flex" gutter={48} align="middle">
+                            <Col xs={{ span: 6 }} sm={{ span: 6 }}>
                                 <div className="wrapper"><img src={logo} alt={"Cookies"} className={"myImg"} /></div>
                             </Col>
-                            <Col span={18}>
+                            <Col xs={{ span: 16, offset: 2 }} sm={{ span: 17, offset: 1 }}>
                                 <div>
                                     <span className="headings text-big">Killhtf</span>
                                     <span className="headings text-med"><br/>- Statistics fan<br/>- Cookies eater</span>
