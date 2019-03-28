@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import "antd/dist/antd.css";
 import logo from "./killhtf av.png";
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon, Row, Col } from 'antd';
 
 const { Header, Content} = Layout;
 
@@ -27,11 +27,17 @@ class MainPage extends React.Component {
                 </Header>
                 <Content>
                     <div className="page-head">
-                        <img src={logo}  alt={"Cookies"} width="300" />
-                        <div style={{paddingLeft: 10, paddingTop: 10, display: "inline-block", verticalAlign: "top"}}>
-                        <span className="headings" style={{fontSize: 80}}>Killhtf</span>
-                            <span className="headings" style={{fontSize: 30}}><br/>- Statistics fan<br/>- Cookies eater</span>
-                        </div>
+                        <Row gutter={16} align="middle">
+                            <Col span={6}>
+                                <div className="wrapper"><img src={logo} alt={"Cookies"} className={"myImg"} /></div>
+                            </Col>
+                            <Col span={18}>
+                                <div>
+                                    <span className="headings text-big">Killhtf</span>
+                                    <span className="headings text-med"><br/>- Statistics fan<br/>- Cookies eater</span>
+                                </div>
+                            </Col>
+                        </Row>
                     </div>
                     <div className="page-head">
                         <div>Work in progress...</div>

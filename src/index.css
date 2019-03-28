@@ -10,3 +10,22 @@ body {
 .headings {
     font-family: "Century Gothic", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
+
+.text-big {
+    font-size: 5vmax;
+}
+
+.text-med {
+    font-size: 3vmax;
+}
+
+/*.wrapper {*/
+/*    position: relative;*/
+/*    padding-top: 56.25%; !* 16:9 Aspect Ratio *!*/
+/*}*/
+.myImg {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+}
