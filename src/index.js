@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import "antd/dist/antd.css";
 import logo from "./killhtf av.png";
 import { Layout, Menu, Icon, Row, Col } from 'antd';
 

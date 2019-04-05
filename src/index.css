@@ -1,6 +1,4 @@
-body {
-    background-color: #f9b468 !important;
-}
+@import '~antd/dist/antd.css';
 
 .page-head {
     background: #ffb969;
