@@ -1,6 +1,6 @@
 {
-  "short_name": "Killhtf GitHub Page",
-  "name": "Killhtf Main GitHub Page",
+  "short_name": "DoubleCookies GitHub Page",
+  "name": "DoubleCookies Main GitHub Page",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +11,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#00ffff"
+  "background_color": "#ffffff"
 }
