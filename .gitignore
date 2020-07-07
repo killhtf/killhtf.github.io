@@ -1,5 +1,7 @@
 # Idea files #
 .idea/
+config/
+scripts/
 # Logs
 logs
 *.log

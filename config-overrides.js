@@ -5,13 +5,5 @@ module.exports = override(
         libraryName: 'antd',
         libraryDirectory: 'es',
         style: true,
-    }),
-    addLessLoader({
-        javascriptEnabled: true,
-        modifyVars: {
-            '@primary-color': '#25b864',
-            '@body-background': '#f0f',
-            '@text-color': '#00f'
-        },
-    }),
+    })
 );

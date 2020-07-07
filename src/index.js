@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import logo from "./killhtf av.png";
+import logo from "./doublecookies av.png";
 import { Layout, Menu, Icon, Row, Col } from 'antd';
 
 const { Header, Content} = Layout;
@@ -20,7 +20,7 @@ class MainPage extends React.Component {
                     >
                         <Menu.Item key="1">Home</Menu.Item>
                         <Menu.Item key="3">
-                            <a href="https://github.com/killhtf" target="_blank" rel="noopener noreferrer"><Icon type="github" />Github</a>
+                            <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><Icon type="github" />Github</a>
                         </Menu.Item>
                     </Menu>
                 </Header>
@@ -32,7 +32,7 @@ class MainPage extends React.Component {
                             </Col>
                             <Col xs={{ span: 16, offset: 2 }} sm={{ span: 17, offset: 1 }}>
                                 <div>
-                                    <span className="headings text-big">Killhtf</span>
+                                    <span className="headings text-big">DoubleCookies</span>
                                     <span className="headings text-med"><br/>- Statistics fan<br/>- Cookies eater</span>
                                 </div>
                             </Col>
