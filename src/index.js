@@ -27,7 +27,7 @@ class MainPage extends React.Component {
                     </Menu>
                 </Header>
                 <Content>
-                    <div className="page-head">
+                    <div className="content-title">
                         <Row type="flex" gutter={48} align="middle">
                             <Col xs={{ span: 6 }} sm={{ span: 6 }}>
                                 <Image src={logo} alt={"Cookies"} className={"myImg"} />
@@ -35,17 +35,18 @@ class MainPage extends React.Component {
                             <Col xs={{ span: 16, offset: 2 }} sm={{ span: 17, offset: 1 }}>
                                 <div>
                                     <span className="headings text-big">DoubleCookies</span>
-                                    <span className="headings text-med"><br/>- Statistics fan<br/>- Cookies eater</span>
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    <div className="page-head">
+                    <div className="content-main">
                         <div>Work in progress...</div>
                     </div>
                 </Content>
                 <Footer>
-                    <Image src={chocoCookie} alt={"ChocoCookie"} className={"footerImg"} />
+                    <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                        <Image src={chocoCookie} alt={"ChocoCookie"} className={"footerImg"} />
+                    </div>
                 </Footer>
             </Layout>
         );

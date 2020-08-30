@@ -1,8 +1,12 @@
 @import '~antd/dist/antd.css';
 
-.page-head {
+.content-title {
     background: #ffb969;
     padding: 24px;
+}
+
+.content-main {
+    font-size: 16px;
 }
 
 .headings {
@@ -10,7 +14,7 @@
 }
 
 .text-big {
-    font-size: 5vmax;
+    font-size: 4.5vmax;
 }
 
 .text-med {
@@ -26,5 +30,5 @@
 
 .footerImg {
     height: auto;
-    width: 100px;
+    width: 150px;
 }
