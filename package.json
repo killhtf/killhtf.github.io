@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://DoubleCookies.github.io/",
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "antd": "^4.6.1",
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^1.0.0",

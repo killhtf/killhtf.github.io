@@ -23,3 +23,8 @@
     max-width: 300px;
     min-width: 100px;
 }
+
+.footerImg {
+    height: auto;
+    width: 100px;
+}

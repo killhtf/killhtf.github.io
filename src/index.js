@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import logo from "./doublecookies av.png";
 import chocoCookie from './ChocoCookie240.png'
-import { Layout, Menu, Icon, Row, Col, Image } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
+import { Layout, Menu, Row, Col, Image } from 'antd';
 
 const { Header, Content, Footer} = Layout;
 
@@ -21,7 +22,7 @@ class MainPage extends React.Component {
                     >
                         <Menu.Item key="1">Home</Menu.Item>
                         <Menu.Item key="3">
-                            <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><Icon type="github" />Github</a>
+                            <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><GithubOutlined />Github</a>
                         </Menu.Item>
                     </Menu>
                 </Header>
@@ -44,10 +45,10 @@ class MainPage extends React.Component {
                     </div>
                 </Content>
                 <Footer>
-                    <Image src={chocoCookie} alt={"ChocoCookie"} className={"myImg"} />
+                    <Image src={chocoCookie} alt={"ChocoCookie"} className={"footerImg"} />
                 </Footer>
             </Layout>
-    );
+        );
     }
 }
 
