@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import logo from "./doublecookies av.png";
-import { Layout, Menu, Icon, Row, Col } from 'antd';
+import chocoCookie from './ChocoCookie240.png'
+import { Layout, Menu, Icon, Row, Col, Image } from 'antd';
 
-const { Header, Content} = Layout;
+const { Header, Content, Footer} = Layout;
 
 class MainPage extends React.Component {
     render() {
@@ -28,7 +29,7 @@ class MainPage extends React.Component {
                     <div className="page-head">
                         <Row type="flex" gutter={48} align="middle">
                             <Col xs={{ span: 6 }} sm={{ span: 6 }}>
-                                <div className="wrapper"><img src={logo} alt={"Cookies"} className={"myImg"} /></div>
+                                <Image src={logo} alt={"Cookies"} className={"myImg"} />
                             </Col>
                             <Col xs={{ span: 16, offset: 2 }} sm={{ span: 17, offset: 1 }}>
                                 <div>
@@ -42,6 +43,9 @@ class MainPage extends React.Component {
                         <div>Work in progress...</div>
                     </div>
                 </Content>
+                <Footer>
+                    <Image src={chocoCookie} alt={"ChocoCookie"} className={"myImg"} />
+                </Footer>
             </Layout>
     );
     }
