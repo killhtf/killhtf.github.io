@@ -25,16 +25,17 @@ i18n
 
         resources: {
             en: {
-                namespace1: {
-                    key: 'hello from namespace 1'
+                about: {
+                    title: 'hello from namespace 1'
                 },
                 namespace2: {
                     key: 'hello from namespace 2'
                 }
             },
             ru: {
-                namespace1: {
-                    key: 'Обо мне из ns1'
+                about: {
+                    title: 'Обо мне из ns1',
+                    intro: 'Всем привет! С вами DoubleCookies — любитель печенья, фанат статистики и всякого прочего.'
                 },
                 namespace2: {
                     key: 'Обо мне из ns2'

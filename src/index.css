@@ -1,5 +1,10 @@
 @import '~antd/dist/antd.css';
 
+.ant-layout-header {
+    height: 32px;
+    background-color: white;
+}
+
 .content-title {
     background: #ffb969;
     padding: 24px;
@@ -47,4 +52,13 @@
 
 .footerIcons > * {
     margin-right: 16px;
+}
+
+.fandomIcon svg {
+    transition: all 0.2s ease-in;
+}
+
+.fandomIcon:hover svg {
+    transition: all 0.2s ease-in;
+    fill: #3fdede;
 }
