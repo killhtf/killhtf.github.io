@@ -29,6 +29,22 @@
 }
 
 .footerImg {
-    height: auto;
+    position: absolute;
+    right: 0;
     width: 150px;
+    top: -30px;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    position: relative;
+}
+
+.footerIcons > * {
+    margin-right: 16px;
 }
