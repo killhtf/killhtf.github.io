@@ -1,9 +1,9 @@
 @import '~antd/dist/antd.css';
 
-.ant-layout-header {
-    height: 32px;
-    background-color: white;
-}
+/*.ant-layout-header {*/
+/*    height: 32px;*/
+/*    background-color: white;*/
+/*}*/
 
 .content-title {
     background: #ffb969;
@@ -11,7 +11,9 @@
 }
 
 .content-main {
-    font-size: 16px;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
 }
 
 .headings {
@@ -22,8 +24,9 @@
     font-size: 5vmax;
 }
 
-.text-med {
-    font-size: 4vmax;
+.text-medium {
+    font-size: 32px;
+    text-align: center;
 }
 
 .myImg {
