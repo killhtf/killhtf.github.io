@@ -4,7 +4,7 @@ import './index.css';
 import logo from "./images/doublecookies av.png";
 import chocolateCookie from './images/ChocoCookie240.png'
 import {GithubOutlined, TwitterOutlined} from '@ant-design/icons';
-import {Col, Image, Layout, Row} from 'antd';
+import {Col, Image, Layout, Row, Divider} from 'antd';
 import {useTranslation} from 'react-i18next';
 import './i18n';
 import FandomIcon from "./FandomIcon";
@@ -12,7 +12,7 @@ import FandomIcon from "./FandomIcon";
 const {Content, Footer} = Layout;
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'namespace2']);
+    const {t} = useTranslation(['about', 'programming', 'programmingProject']);
     return (
         <Layout className="layout">
             {/*<Header>*/}
@@ -43,11 +43,25 @@ function MainPage() {
                     </Row>
                 </div>
                 <div className="content-main">
-                    <Row gutter={[16, 16]}>
+                    <Row gutter={[8, 8]} style={{marginTop: 10}}>
                         <Col span={24}><div className="headings text-medium">{t("about:title")}</div></Col>
                     </Row>
-                    <Row gutter={[16, 16]}>
+                    <Row gutter={[8, 8]}>
                         <Col span={24}>{t("about:intro")}</Col>
+                    </Row>
+                    <Divider className="gradient-border" />
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}><div className="headings text-medium">{t("programming:title")}</div></Col>
+                    </Row>
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}>{t("programming:intro")}</Col>
+                    </Row>
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>
+                    </Row>
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}>{t("programmingProject:intro")}</Col>
+                        <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>
                     </Row>
                 </div>
             </Content>
