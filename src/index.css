@@ -1,9 +1,9 @@
 @import '~antd/dist/antd.css';
 
-/*.ant-layout-header {*/
-/*    height: 32px;*/
-/*    background-color: white;*/
-/*}*/
+.ant-layout-header {
+    height: 32px;
+    background-color: white;
+}
 
 .content-title {
     background: #ffb969;

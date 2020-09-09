@@ -7,8 +7,9 @@ import {GithubOutlined, TwitterOutlined} from '@ant-design/icons';
 import {Col, Image, Layout, Row, Divider} from 'antd';
 import {useTranslation} from 'react-i18next';
 import './i18n';
-import FandomIcon from "./FandomIcon";
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import FandomIcon from "./components/FandomIcon";
+import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import HeaderNavigation from "./components/HeaderNavigation";
 
 const {Content, Footer} = Layout;
 
@@ -17,7 +18,7 @@ function Routes(){
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={MainPage} />
-                <Route path="/programming" component={() => (<div>Work in progress!</div>)} />
+                <Route path="/programming" component={() => (<div><HeaderNavigation selectedKeys={['2']}/>Work in progress!</div>)} />
                 <Route component={() => (<div>404 Not found </div>)} />
             </Switch>
         </BrowserRouter>
@@ -25,23 +26,10 @@ function Routes(){
 }
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'programmingProject']);
+    const {t} = useTranslation(['about', 'programming', 'fandom']);
     return (
         <Layout className="layout">
-            {/*<Header>*/}
-            {/*    <div className="logo" />*/}
-            {/*    <Menu*/}
-            {/*        theme="light"*/}
-            {/*        mode="horizontal"*/}
-            {/*        defaultSelectedKeys={['1']}*/}
-            {/*        style={{ lineHeight: '32px', height: '32px' }}*/}
-            {/*    >*/}
-            {/*        <Menu.Item key="1">Home</Menu.Item>*/}
-            {/*        <Menu.Item key="3">*/}
-            {/*            <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><GithubOutlined />Github</a>*/}
-            {/*        </Menu.Item>*/}
-            {/*    </Menu>*/}
-            {/*</Header>*/}
+            <HeaderNavigation selectedKeys={['1']}/>
             <Content>
                 <div className="content-title">
                     <Row type="flex" gutter={48} align="middle">
@@ -76,6 +64,13 @@ function MainPage() {
                     {/*    <Col span={24}>{t("programmingProject:intro")}</Col>*/}
                     {/*    <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>*/}
                     {/*</Row>*/}
+                    <Divider className="gradient-border" />
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}><div className="headings text-medium">FANDOM</div></Col>
+                    </Row>
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}>{t("fandom:intro")}</Col>
+                    </Row>
                 </div>
             </Content>
             <Footer style={{paddingTop: 36, overflowY: 'hidden'}}>
