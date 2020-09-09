@@ -8,8 +8,21 @@ import {Col, Image, Layout, Row, Divider} from 'antd';
 import {useTranslation} from 'react-i18next';
 import './i18n';
 import FandomIcon from "./FandomIcon";
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 const {Content, Footer} = Layout;
+
+function Routes(){
+    return (
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Switch>
+                <Route exact path="/" component={MainPage} />
+                <Route path="/programming" component={() => (<div>Work in progress!</div>)} />
+                <Route component={() => (<div>404 Not found </div>)} />
+            </Switch>
+        </BrowserRouter>
+    );
+}
 
 function MainPage() {
     const {t} = useTranslation(['about', 'programming', 'programmingProject']);
@@ -54,15 +67,15 @@ function MainPage() {
                         <Col span={24}><div className="headings text-medium">{t("programming:title")}</div></Col>
                     </Row>
                     <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("programming:intro")}</Col>
+                        <Col span={24}>{t("programming:intro")}<br/><Link to="/programming">Link to programming</Link></Col>
                     </Row>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>
-                    </Row>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("programmingProject:intro")}</Col>
-                        <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>
-                    </Row>
+                    {/*<Row gutter={[8, 8]}>*/}
+                    {/*    <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>*/}
+                    {/*</Row>*/}
+                    {/*<Row gutter={[8, 8]}>*/}
+                    {/*    <Col span={24}>{t("programmingProject:intro")}</Col>*/}
+                    {/*    <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>*/}
+                    {/*</Row>*/}
                 </div>
             </Content>
             <Footer style={{paddingTop: 36, overflowY: 'hidden'}}>
@@ -82,6 +95,6 @@ function MainPage() {
 // ========================================
 
 ReactDOM.render(
-<MainPage />,
+<Routes />,
     document.getElementById('root')
 );

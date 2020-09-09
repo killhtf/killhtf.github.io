@@ -70,8 +70,8 @@
 }
 
 .gradient-border {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(205, 205, 205, 0.75), rgba(0, 0, 0, 0) 95%);
+    background-image: linear-gradient(to right, rgba(239, 210, 151, 0.95) 25px, transparent 85%);
     border: 0;
-    height: 5px;
-    margin: 12px 0;
+    height: 4px;
+    margin: 6px 0 12px 0;
 }
