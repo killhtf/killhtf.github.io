@@ -2,7 +2,7 @@
   "name": "doublecookies.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DoubleCookies.github.io/",
+  "homepage": "https://doublecookies.github.io/",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "antd": "^4.6.1",
