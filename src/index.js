@@ -1,93 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import logo from "./images/doublecookies av.png";
-import chocolateCookie from './images/ChocoCookie240.png'
-import {GithubOutlined, TwitterOutlined} from '@ant-design/icons';
-import {Col, Image, Layout, Row, Divider} from 'antd';
-import {useTranslation} from 'react-i18next';
 import './i18n';
-import FandomIcon from "./components/FandomIcon";
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import HeaderNavigation from "./components/HeaderNavigation";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import MainPage from "./pages/MainPage";
+import ProgrammingPage from "./pages/ProgrammingPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-const {Content, Footer} = Layout;
-
-function Routes(){
+function Routes() {
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={MainPage} />
-                <Route path="/programming" component={() => (<div><HeaderNavigation selectedKeys={['2']}/>Work in progress!</div>)} />
-                <Route component={() => (<div>404 Not found </div>)} />
+                <Route path="/programming" component={ProgrammingPage} />
+                <Route component={NotFoundPage} />
             </Switch>
         </BrowserRouter>
     );
 }
-
-function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'fandom']);
-    return (
-        <Layout className="layout">
-            <HeaderNavigation selectedKeys={['1']}/>
-            <Content>
-                <div className="content-title">
-                    <Row type="flex" gutter={48} align="middle">
-                        <Col span={6} offset={2}>
-                            <Image src={logo} alt={"Cookies"} className={"myImg"} />
-                        </Col>
-                        <Col span={15} offset={1}>
-                            <div>
-                                <span className="headings text-big">DoubleCookies</span>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
-                <div className="content-main">
-                    <Row gutter={[8, 8]} style={{marginTop: 10}}>
-                        <Col span={24}><div className="headings text-medium">{t("about:title")}</div></Col>
-                    </Row>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("about:intro")}</Col>
-                    </Row>
-                    <Divider className="gradient-border" />
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}><div className="headings text-medium">{t("programming:title")}</div></Col>
-                    </Row>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("programming:intro")}<br/><Link to="/programming">Link to programming</Link></Col>
-                    </Row>
-                    {/*<Row gutter={[8, 8]}>*/}
-                    {/*    <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>*/}
-                    {/*</Row>*/}
-                    {/*<Row gutter={[8, 8]}>*/}
-                    {/*    <Col span={24}>{t("programmingProject:intro")}</Col>*/}
-                    {/*    <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>*/}
-                    {/*</Row>*/}
-                    <Divider className="gradient-border" />
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}><div className="headings text-medium">FANDOM</div></Col>
-                    </Row>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("fandom:intro")}</Col>
-                    </Row>
-                </div>
-            </Content>
-            <Footer style={{paddingTop: 36, overflowY: 'hidden'}}>
-                <div className="test">
-                    <div className="footerIcons">
-                        <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><GithubOutlined style={{fontSize: 32}} /></a>
-                        <a href="https://twitter.com/BigDoubleCookie" target="_blank" rel="noopener noreferrer"><TwitterOutlined style={{fontSize: 32}} /></a>
-                        <a href="https://community.fandom.com/wiki/User:DoubleCookies" target="_blank" rel="noopener noreferrer"><FandomIcon className="fandomIcon" style={{width: 32, height: 32}} /></a>
-                    </div>
-                    <Image src={chocolateCookie} alt={"ChocolateCookie"} className={"footerImg"} />
-                </div>
-            </Footer>
-        </Layout>
-    );
-}
-
-// ========================================
 
 ReactDOM.render(
 <Routes />,
