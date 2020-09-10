@@ -13,7 +13,7 @@ function Routes() {
             <Switch>
                 <Route exact path="/" component={MainPage} />
                 <Route path="/programming" component={ProgrammingPage} />
-                <Route component={NotFoundPage} />
+                {/*<Route component={NotFoundPage} />*/}
             </Switch>
         </BrowserRouter>
     );
