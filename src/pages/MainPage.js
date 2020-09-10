@@ -1,20 +1,20 @@
-import {useTranslation} from "react-i18next";
-import {Col, Divider, Image, Layout, Row} from "antd";
-import HeaderNavigation from "../components/HeaderNavigation";
-import logo from "../images/doublecookies av.png";
-import {Link} from "react-router-dom";
-import {GithubOutlined, TwitterOutlined} from "@ant-design/icons";
-import FandomIcon from "../components/FandomIcon";
-import chocolateCookie from "../images/ChocoCookie240.png";
-import React from "react";
+import {useTranslation} from 'react-i18next';
+import {Col, Divider, Image, Layout, Row} from 'antd';
+import {Link} from 'react-router-dom';
+import React from 'react';
+import logo from '../images/doublecookies av.png';
+import HeaderNavigation from '../components/HeaderNavigation/HeaderNavigation';
+import FooterNavigation from '../components/FooterNavigation/FooterNavigation';
 
-const {Content, Footer} = Layout;
+const {Header, Content, Footer} = Layout;
 
 function MainPage() {
     const {t} = useTranslation(['about', 'programming', 'fandom', 'photography']);
     return (
         <Layout className="layout">
-            <HeaderNavigation selectedKeys={['1']}/>
+            <Header>
+                <HeaderNavigation selectedKeys={['1']}/>
+            </Header>
             <Content>
                 <div className="content-title">
                     <Row type="flex" gutter={48} align="middle">
@@ -42,13 +42,6 @@ function MainPage() {
                     <Row gutter={[8, 8]}>
                         <Col span={24}>{t("programming:intro")}<br/><Link to="/programming">Link to programming</Link></Col>
                     </Row>
-                    {/*<Row gutter={[8, 8]}>*/}
-                    {/*    <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>*/}
-                    {/*</Row>*/}
-                    {/*<Row gutter={[8, 8]}>*/}
-                    {/*    <Col span={24}>{t("programmingProject:intro")}</Col>*/}
-                    {/*    <Col span={24}><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</Col>*/}
-                    {/*</Row>*/}
                     <Divider className="gradient-border" />
                     <Row gutter={[8, 8]}>
                         <Col span={24}><div className="headings text-medium">FANDOM</div></Col>
@@ -64,16 +57,10 @@ function MainPage() {
                         <Col span={24}>{t("photography:intro")}</Col>
                     </Row>
                 </div>
+                <Divider className="gradient-border-end" />
             </Content>
             <Footer style={{paddingTop: 36, overflowY: 'hidden'}}>
-                <div className="test">
-                    <div className="footerIcons">
-                        <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><GithubOutlined style={{fontSize: 32}} /></a>
-                        <a href="https://twitter.com/BigDoubleCookie" target="_blank" rel="noopener noreferrer"><TwitterOutlined style={{fontSize: 32}} /></a>
-                        <a href="https://community.fandom.com/wiki/User:DoubleCookies" target="_blank" rel="noopener noreferrer"><FandomIcon className="fandomIcon" style={{width: 32, height: 32}} /></a>
-                    </div>
-                    <Image preview={false} src={chocolateCookie} alt={"ChocolateCookie"} className={"footerImg"} />
-                </div>
+                <FooterNavigation/>
             </Footer>
         </Layout>
     );

@@ -1,0 +1,8 @@
+.fandomIcon svg {
+    transition: all 0.2s ease-in;
+}
+
+.fandomIcon:hover svg {
+    transition: all 0.2s ease-in;
+    fill: red;
+}

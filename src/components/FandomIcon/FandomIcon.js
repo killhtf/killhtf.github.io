@@ -1,5 +1,6 @@
-import React from "react";
-import Icon from "@ant-design/icons";
+import React from 'react';
+import Icon from '@ant-design/icons';
+import './FandomIcon.css';
 
 const FandomSvg = () => (
     <svg fill="#00D6D6" fillRule="evenodd" viewBox="0 0 250 250" transform="translate(-.664 -.216)">

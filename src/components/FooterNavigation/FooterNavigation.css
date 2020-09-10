@@ -1,0 +1,20 @@
+.relative-pos {
+    position: relative;
+}
+
+.footerImg {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    top: -37px;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIcons > * {
+    margin-right: 16px;
+}

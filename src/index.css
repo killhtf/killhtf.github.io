@@ -39,41 +39,16 @@
     min-width: 100px;
 }
 
-.footerImg {
-    position: absolute;
-    right: 0;
-    width: 150px;
-    top: -30px;
-}
-
-.footerIcons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.test {
-    position: relative;
-}
-
-.footerIcons > * {
-    margin-right: 16px;
-}
-
-.fandomIcon svg {
-    transition: all 0.2s ease-in;
-}
-
-.fandomIcon:hover svg {
-    transition: all 0.2s ease-in;
-    fill: #3fdede;
-}
-
 .gradient-border {
     background-image: linear-gradient(to right, rgba(239, 210, 151, 0.95) 25px, transparent 85%);
     border: 0;
     height: 4px;
     margin: 6px 0 12px 0;
+}
+
+.gradient-border-end {
+    background: rgb(234, 197, 91);
+    height: 5px;
 }
 
 /** Animation styles can be found on https://github.com/kaustubhmenon/animation-library **/
