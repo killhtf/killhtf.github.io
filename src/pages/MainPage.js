@@ -11,7 +11,7 @@ import React from "react";
 const {Content, Footer} = Layout;
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'fandom']);
+    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography']);
     return (
         <Layout className="layout">
             <HeaderNavigation selectedKeys={['1']}/>
@@ -55,6 +55,13 @@ function MainPage() {
                     </Row>
                     <Row gutter={[8, 8]}>
                         <Col span={24}>{t("fandom:intro")}</Col>
+                    </Row>
+                    <Divider className="gradient-border" />
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}><div className="headings text-medium">{t("photography:title")}</div></Col>
+                    </Row>
+                    <Row gutter={[8, 8]}>
+                        <Col span={24}>{t("photography:intro")}</Col>
                     </Row>
                 </div>
             </Content>
