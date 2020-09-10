@@ -5,7 +5,6 @@ import './i18n';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import ProgrammingPage from "./pages/ProgrammingPage";
-import NotFoundPage from "./pages/NotFoundPage";
 
 function Routes() {
     return (
@@ -13,7 +12,6 @@ function Routes() {
             <Switch>
                 <Route exact path="/" component={MainPage} />
                 <Route path="/programming" component={ProgrammingPage} />
-                {/*<Route component={NotFoundPage} />*/}
             </Switch>
         </BrowserRouter>
     );
