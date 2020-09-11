@@ -1,12 +1,16 @@
-.relative-pos {
-    position: relative;
+.footer-font {
+    margin-top: 10px;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .footerImg {
     position: absolute;
     right: 0;
     width: 150px;
-    top: -37px;
+    top: -10px;
 }
 
 .footerIcons {

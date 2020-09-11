@@ -4,5 +4,5 @@
 
 .fandomIcon:hover svg {
     transition: all 0.2s ease-in;
-    fill: red;
+    fill: #4ec0dc;
 }

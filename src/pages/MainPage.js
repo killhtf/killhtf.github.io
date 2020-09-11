@@ -9,7 +9,7 @@ import FooterNavigation from '../components/FooterNavigation/FooterNavigation';
 const {Header, Content, Footer} = Layout;
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography']);
+    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography', 'thisPage']);
     return (
         <Layout className="layout">
             <Header>
@@ -40,7 +40,7 @@ function MainPage() {
                         <Col span={24}><div className="headings text-medium">{t("programming:title")}</div></Col>
                     </Row>
                     <Row gutter={[8, 8]}>
-                        <Col span={24}>{t("programming:intro")}<br/><Link to="/programming">Link to programming</Link></Col>
+                        <Col span={24}>{t("programming:intro")}<br/>{t("programming:preLink")}<Link to="/programming">{t("programming:link")}</Link></Col>
                     </Row>
                     <Divider className="gradient-border" />
                     <Row gutter={[8, 8]}>
@@ -59,7 +59,7 @@ function MainPage() {
                 </div>
                 <Divider className="gradient-border-end" />
             </Content>
-            <Footer style={{paddingTop: 36, overflowY: 'hidden'}}>
+            <Footer style={{paddingTop: 10, overflowY: 'hidden'}}>
                 <FooterNavigation/>
             </Footer>
         </Layout>
