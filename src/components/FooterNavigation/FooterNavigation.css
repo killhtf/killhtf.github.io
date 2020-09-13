@@ -6,11 +6,30 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 350px) {
+    .footer-font {
+        margin-top: 10px;
+        color: gray;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
 .footerImg {
     position: absolute;
     right: 0;
     width: 150px;
     top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerImg {
+        position: absolute;
+        right: -45px;
+        width: 80px;
+        top: -10px;
+    }
 }
 
 .footerIcons {

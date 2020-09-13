@@ -1,10 +1,10 @@
 import {useTranslation} from 'react-i18next';
-import {Col, Divider, Image, Layout, Row} from 'antd';
+import {Col, Divider, Layout, Row} from 'antd';
 import {Link} from 'react-router-dom';
 import React from 'react';
-import logo from '../images/doublecookies av.png';
 import HeaderNavigation from '../components/HeaderNavigation/HeaderNavigation';
 import FooterNavigation from '../components/FooterNavigation/FooterNavigation';
+import CookiesBlock from '../components/CookiesBlock/CookiesBlock';
 
 const {Header, Content, Footer} = Layout;
 
@@ -16,18 +16,7 @@ function MainPage() {
                 <HeaderNavigation selectedKeys={['1']}/>
             </Header>
             <Content>
-                <div className="content-title">
-                    <Row type="flex" gutter={48} align="middle">
-                        <Col span={6} offset={2}>
-                            <Image preview={false} src={logo} alt={"Cookies"} className={"myImg u--fadeInDown"} />
-                        </Col>
-                        <Col span={15} offset={1}>
-                            <div>
-                                <span className="headings text-big">DoubleCookies</span>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
+                <CookiesBlock/>
                 <div className="content-main">
                     <Row gutter={[8, 8]} style={{marginTop: 10}}>
                         <Col span={24}><div className="headings text-medium">{t("about:title")}</div></Col>
