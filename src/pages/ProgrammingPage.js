@@ -13,9 +13,9 @@ function ProgrammingPage() {
                 <HeaderNavigation selectedKeys={['2']}/>
             </Header>
             <Content>
-                <CookiesBlock/>
+                <CookiesBlock name={"programmingTitle"} />
                 <div className="content-main">
-                    Work in progress!!
+                    Work in progress!
                 </div>
                 {/*<Row gutter={[8, 8]}>*/}
                 {/*    <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>*/}

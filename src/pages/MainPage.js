@@ -16,7 +16,7 @@ function MainPage() {
                 <HeaderNavigation selectedKeys={['1']}/>
             </Header>
             <Content>
-                <CookiesBlock/>
+                <CookiesBlock name={"cookies"} />
                 <div className="content-main">
                     <Row gutter={[8, 8]} style={{marginTop: 10}}>
                         <Col span={24}><div className="headings text-medium">{t("about:title")}</div></Col>
@@ -26,7 +26,7 @@ function MainPage() {
                     </Row>
                     <Divider className="gradient-border" />
                     <Row gutter={[8, 8]}>
-                        <Col span={24}><div className="headings text-medium">{t("programming:title")}</div></Col>
+                        <Col span={24}><div className="headings text-medium">{t("about:programmingTitle")}</div></Col>
                     </Row>
                     <Row gutter={[8, 8]}>
                         <Col span={24}>{t("programming:intro")}<br/>{t("programming:preLink")}<Link to="/programming">{t("programming:link")}</Link></Col>
@@ -40,7 +40,7 @@ function MainPage() {
                     </Row>
                     <Divider className="gradient-border" />
                     <Row gutter={[8, 8]}>
-                        <Col span={24}><div className="headings text-medium">{t("photography:title")}</div></Col>
+                        <Col span={24}><div className="headings text-medium">{t("about:photoTitle")}</div></Col>
                     </Row>
                     <Row gutter={[8, 8]}>
                         <Col span={24}>{t("photography:intro")}</Col>

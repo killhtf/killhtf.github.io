@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import detector from 'i18next-browser-languagedetector';
 
 //import Backend from 'i18next-http-backend';
 //import LanguageDetector from 'i18next-browser-languagedetector';
@@ -13,7 +14,7 @@ i18n
     //.use(Backend)
     // detect user language
     // learn more: https://github.com/i18next/i18next-browser-languageDetector
-    //.use(LanguageDetector)
+    .use(detector)
     // pass the i18n instance to react-i18next.
     .use(initReactI18next)
     // init i18next
@@ -35,6 +36,9 @@ i18n
             ru: {
                 about: {
                     title: 'Обо мне',
+                    cookies: 'DoubleCookies',
+                    programmingTitle: 'Программирование',
+                    photoTitle: 'Фото',
                     intro: 'Всем привет! С вами DoubleCookies — тот, кто любит программировать, кушать печенье, изучать статистику и многое другое. ' +
                         'Более подробно обо мне и моей деятельности можно будет прочитать ниже.'
                 },
@@ -45,14 +49,16 @@ i18n
                     ghPages: 'Место размещение web-страницы',
                     i18next: 'Для поддержки разных языков',
                     reactRouter: 'Для навигации',
-                    cookie: 'Знаете ли, я весьма умное печенье.'
+                    cookie: 'Знаете ли, я весьма умное печенье. Разибраюсь в используемых технологиях.'
 
                 },
                 programming: {
                     title: 'Программирование',
-                    intro: 'На данный момент — основная сфера деятельности. Этому занятию посвящаю большую часть своего времени ' +
-                        '(как и на работе, так и в свободное от неё время).',
-                    preLink: 'Подробнее об этом можно прочитать в ',
+                    intro: 'Сейчас программирование является моей основной сферой деятельности. Кратко о себе: Java-разработчик с 3 годами опыта; знаком с Spring Boot, JUnit, ' +
+                        'базами данных. Также работал с JS (React, Typescript), HTML и CSS. Не против вклада в Open Source — ' +
+                        'на GitHub работаю как над своими, так и над чужими проектами.' +
+                        '',
+                    preLink: 'Больше информации можно найти в ',
                     link: 'соответствующем разделе.'
                 },
                 programmingProject: {
@@ -64,12 +70,10 @@ i18n
                     intro: 'FANDOM — это крупнейший в мире развлекательный сайт для фанатов, а также один из крупнейших вики-хостингов.'
                 },
                 photography: {
-                    title: 'Фото',
                     intro: 'Фотографии — это хорошо. Когда ты сам можешь их делать — это отлично!',
                 }
             }
         }
     });
-
 
 export default i18n;

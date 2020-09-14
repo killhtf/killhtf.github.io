@@ -2,8 +2,10 @@ import {Col, Image, Row} from 'antd';
 import logo from '../../images/doublecookies av.png';
 import React from 'react';
 import './CookiesBlock.css'
+import {useTranslation} from 'react-i18next';
 
-function CookiesBlock() {
+function CookiesBlock(props) {
+    const {t} = useTranslation(['about']);
     return(
         <div className="content-title">
             <Row type="flex" justify="center">
@@ -12,7 +14,7 @@ function CookiesBlock() {
                 </Col>
             </Row>
             <Row type="flex" align="middle" justify="center">
-                <span className="headings text-big">DoubleCookies</span>
+                <span className="headings text-big">{t(props.name)}</span>
             </Row>
         </div>
     );
