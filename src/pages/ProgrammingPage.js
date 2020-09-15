@@ -3,6 +3,8 @@ import {Divider, Layout} from 'antd';
 import HeaderNavigation from '../components/HeaderNavigation/HeaderNavigation';
 import FooterNavigation from '../components/FooterNavigation/FooterNavigation';
 import CookiesBlock from '../components/CookiesBlock/CookiesBlock';
+import GitHubCalendar from 'react-github-calendar';
+import ReactTooltip from 'react-tooltip';
 
 const {Header, Content, Footer} = Layout;
 
@@ -15,7 +17,10 @@ function ProgrammingPage() {
             <Content>
                 <CookiesBlock name={"programmingTitle"} />
                 <div className="content-main">
-                    Work in progress!
+                    <div>Work in progress!</div>
+                    <GitHubCalendar username="DoubleCookies">
+                        <ReactTooltip delayShow={50} html />
+                    </GitHubCalendar>
                 </div>
                 {/*<Row gutter={[8, 8]}>*/}
                 {/*    <Col span={24}><div className="headings text-miniMedium">{t("programmingProject:title")}</div></Col>*/}
