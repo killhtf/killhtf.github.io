@@ -62,7 +62,7 @@ function FooterNavigation() {
                 <a href="https://community.fandom.com/wiki/User:DoubleCookies" target="_blank" rel="noopener noreferrer"><FandomIcon className="fandomIcon" style={{width: 32, height: 32}} /></a>
             </div>
             <div className="footer-font">
-                Copyright (c) 2020 Igor Nemytyshev
+                Copyright © 2020 Igor Nemytyshev
             </div>
             <Popover content={content} style={{paddingRight: 20}} placement="topRight">
                 <Image preview={false} src={chocolateCookie} alt={"ChocolateCookie"} className={"footerImg"} />
