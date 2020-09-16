@@ -1,10 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Menu} from 'antd';
+import {Menu, Button} from 'antd';
 import {useTranslation} from 'react-i18next';
+import { GlobalOutlined } from '@ant-design/icons';
+import i18n from '../../i18n';
+import './HeaderNavigation.css'
 
 function HeaderNavigation(props) {
     const {t} = useTranslation(['about']);
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng).then();
+    }
+    const { SubMenu } = Menu;
     return(
         <Menu
             theme="light"
@@ -16,6 +23,14 @@ function HeaderNavigation(props) {
             <Menu.Item key="2"><Link to="/programming">{t('programmingTitle')}</Link></Menu.Item>
             <Menu.Item key="3"><Link to="/fandom">{t('fandomTitle')}</Link></Menu.Item>
             <Menu.Item key="4"><Link to="/hobbies">{t('hobbiesTitle')}</Link></Menu.Item>
+            <SubMenu key="5" icon={<GlobalOutlined style={{fontSize: 20, verticalAlign: 'sub', marginLeft: 'auto', marginRight: 'auto'}}/>}>
+                <Menu.Item key="lang:1">
+                    <Button onClick={() => changeLanguage('en')} type="link" disabled={i18n.language === 'en'}>En</Button>
+                </Menu.Item>
+                <Menu.Item key="lang:2">
+                    <Button onClick={() => changeLanguage('ru')} type="link" disabled={i18n.language === 'ru'}>Ru</Button>
+                </Menu.Item>
+            </SubMenu>
         </Menu>
     );
 }
