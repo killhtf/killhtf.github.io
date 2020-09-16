@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6bdae7d8b1678e8bde29a54f0a4537c",
+    "revision": "8dae9dd7af75cdf4ccd34ba4c9ae01c6",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.99a5358a.chunk.css"
   },
   {
-    "revision": "4eb5067b9eb6982accd0",
+    "revision": "0127caf0981e522c5758",
     "url": "/static/css/main.9b9fe6d3.chunk.css"
   },
   {
@@ -20,19 +20,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.32af3f14.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4eb5067b9eb6982accd0",
-    "url": "/static/js/main.3d8b061b.chunk.js"
+    "revision": "0127caf0981e522c5758",
+    "url": "/static/js/main.7c36eaaf.chunk.js"
   },
   {
     "revision": "8b0f391bfdd48764ca85",
     "url": "/static/js/runtime-main.15e679b5.js"
   },
   {
-    "revision": "5f2ba1b1da6975467bf8f33220b3b0ac",
-    "url": "/static/media/ChocoCookie240.5f2ba1b1.png"
+    "revision": "47e30137e34467a3eab626f89a132e4a",
+    "url": "/static/media/ChocoCookie.47e30137.png"
   },
   {
-    "revision": "cfee21d8af16c6da5fc3b1fb87e4272f",
-    "url": "/static/media/doublecookies av.cfee21d8.png"
+    "revision": "491268d24231b90d407745ede4e6ac8b",
+    "url": "/static/media/DoubleCookies.491268d2.png"
   }
 ]);
