@@ -9,7 +9,7 @@ import CookiesBlock from '../components/CookiesBlock/CookiesBlock';
 const {Header, Content, Footer} = Layout;
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography', 'thisPage', 'hobbies']);
+    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography', 'aboutThisPage', 'hobbies']);
     return (
         <Layout className="layout">
             <Header>

@@ -7,7 +7,7 @@ import './FooterNavigation.css';
 import {useTranslation} from 'react-i18next';
 
 function FooterNavigation() {
-    const {t} = useTranslation(['thisPage']);
+    const {t} = useTranslation(['aboutThisPage']);
     const data = [
         {
             title: 'Antd',
