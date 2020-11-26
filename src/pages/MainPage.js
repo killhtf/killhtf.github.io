@@ -9,7 +9,7 @@ import CookiesBlock from '../components/CookiesBlock/CookiesBlock';
 const {Header, Content, Footer} = Layout;
 
 function MainPage() {
-    const {t} = useTranslation(['about', 'programming', 'fandom', 'photography', 'aboutThisPage', 'hobbies']);
+    const {t} = useTranslation(['mainPage']);
     return (
         <Layout className="layout">
             <Header>
@@ -19,37 +19,45 @@ function MainPage() {
                 <CookiesBlock name={"cookies"} />
                 <div className="content-main">
                     <Row style={{marginTop: 10}}>
-                        <Col span={24}><div className="headings text-medium">{t("about:mainTitle")}</div></Col>
+                        <Col span={24}><div className="headings text-medium">{t("mainPage:mainTitle")}</div></Col>
                     </Row>
                     <Row>
-                        <Col span={24}>{t("about:intro")}</Col>
+                        <Col span={24}>{t("mainPage:intro")}</Col>
                     </Row>
                     <Divider className="gradient-border" />
                     <Row>
-                        <Col span={24}><div className="headings text-medium">{t("about:programmingTitle")}</div></Col>
+                        <Col span={24}><div className="headings text-medium">{t("mainPage:programmingTitle")}</div></Col>
                     </Row>
                     <Row>
-                        <Col span={24}><div>{t("programming:intro")}</div><br/><div>{t("programming:openSource")}</div><br/><div>{t("programming:preLink")}<Link to="/programming">{t("programming:link")}</Link></div></Col>
+                        <Col span={24}>
+                            <div>{t("mainPage:programmingIntro")}</div><br/>
+                            <div>{t("mainPage:programmingOpenSource")}</div><br/>
+                            <div>{t("mainPage:programmingPreLink")}<Link to="/programming">{t("mainPage:programmingLink")}</Link></div>
+                        </Col>
                     </Row>
                     <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}><div className="headings text-medium">FANDOM</div></Col>
                     </Row>
                     <Row>
-                        <Col span={24}><div>{t("fandom:intro")}</div><br/><div>{t("fandom:vanguard")}</div><br/><div>{t("fandom:preLink")}<Link to="/fandom">{t("fandom:link")}</Link></div></Col>
+                        <Col span={24}>
+                            <div>{t("mainPage:fandomIntro")}</div><br/>
+                            <div>{t("mainPage:fandomVanguard")}</div><br/>
+                            <div>{t("mainPage:fandomPreLink")}<Link to="/fandom">{t("mainPage:fandomLink")}</Link></div>
+                        </Col>
                     </Row>
                     <Divider className="gradient-border" />
                     <Row>
-                        <Col span={24}><div className="headings text-medium">{t("about:hobbiesTitle")}</div></Col>
+                        <Col span={24}><div className="headings text-medium">{t("mainPage:hobbiesTitle")}</div></Col>
                     </Row>
                     <Row>
-                        <Col span={24}><Link to="/hobbies">{t("hobbies:link")}</Link></Col>
+                        <Col span={24}><Link to="/hobbies">{t("mainPage:hobbiesLink")}</Link></Col>
                     </Row>
                 </div>
                 <Divider className="gradient-border-end" />
             </Content>
             <Footer style={{paddingTop: 10, overflowY: 'hidden'}}>
-                <FooterNavigation/>
+                <FooterNavigation />
             </Footer>
         </Layout>
     );

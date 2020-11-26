@@ -29,6 +29,13 @@
     font-size: 22px;
 }
 
+.gradient-border-small {
+    background-image: linear-gradient(to right, rgba(239, 210, 151, 0.95) 25px, transparent 80%);
+    border: 0;
+    height: 4px;
+    margin: 0 0 6px 0;
+}
+
 .gradient-border {
     background-image: linear-gradient(to right, rgba(239, 210, 151, 0.95) 25px, transparent 85%);
     border: 0;

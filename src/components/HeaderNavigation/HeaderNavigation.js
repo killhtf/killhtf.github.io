@@ -7,7 +7,7 @@ import i18n from '../../i18n';
 import './HeaderNavigation.css'
 
 function HeaderNavigation(props) {
-    const {t} = useTranslation(['about']);
+    const {t} = useTranslation(['mainPage']);
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng).then();
     }
