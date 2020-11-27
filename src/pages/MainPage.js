@@ -18,16 +18,17 @@ function MainPage() {
             <Content>
                 <CookiesBlock name={"cookies"} />
                 <div className="content-main">
-                    <Row style={{marginTop: 10}}>
-                        <Col span={24}><div className="headings text-medium">{t("mainPage:mainTitle")}</div></Col>
-                    </Row>
                     <Row>
-                        <Col span={24}>{t("mainPage:intro")}</Col>
+                        <Col span={24}><div className="headings text-medium">{t("mainPage:mainTitle")}</div></Col>
                     </Row>
                     <Divider className="gradient-border" />
                     <Row>
+                        <Col span={24}>{t("mainPage:intro")}</Col>
+                    </Row>
+                    <Row>
                         <Col span={24}><div className="headings text-medium">{t("mainPage:programmingTitle")}</div></Col>
                     </Row>
+                    <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}>
                             <div>{t("mainPage:programmingIntro")}</div><br/>
@@ -35,10 +36,10 @@ function MainPage() {
                             <div>{t("mainPage:programmingPreLink")}<Link to="/programming">{t("mainPage:programmingLink")}</Link></div>
                         </Col>
                     </Row>
-                    <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}><div className="headings text-medium">FANDOM</div></Col>
                     </Row>
+                    <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}>
                             <div>{t("mainPage:fandomIntro")}</div><br/>
@@ -46,10 +47,10 @@ function MainPage() {
                             <div>{t("mainPage:fandomPreLink")}<Link to="/fandom">{t("mainPage:fandomLink")}</Link></div>
                         </Col>
                     </Row>
-                    <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}><div className="headings text-medium">{t("mainPage:hobbiesTitle")}</div></Col>
                     </Row>
+                    <Divider className="gradient-border" />
                     <Row>
                         <Col span={24}><Link to="/hobbies">{t("mainPage:hobbiesLink")}</Link></Col>
                     </Row>
