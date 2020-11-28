@@ -76,22 +76,18 @@ function ProgrammingPage() {
                     <Divider className="gradient-border-small" />
                     <Row>
                         <Col span={24}>{t("programmingProject:intro")}</Col>
-                        <Col span={24}>
-                            <a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}
-                        </Col>
-                        <Col span={24}>
-                            <a href="https://github.com/DoubleCookies/stats4wiki" target="_blank" rel="noopener noreferrer">stats4wiki</a>{t("programmingProject:stats4wiki")}
-                        </Col>
-                        <Col span={24}>
-                            <a href="https://github.com/DoubleCookies/StringSwap" target="_blank" rel="noopener noreferrer">StringSwap</a>{t("programmingProject:StringSwap")}
-                        </Col>
-                        <Col span={24}>
-                            <a href="https://github.com/DoubleCookies/MazeGeneratorAndSolver" target="_blank" rel="noopener noreferrer">MazeGeneratorAndSolver</a>{t("programmingProject:MazeGeneratorAndSolver")}
-                        </Col>
-                        <Col span={24}>
-                            <a href="https://github.com/DoubleCookies/AssociativeRules" target="_blank" rel="noopener noreferrer">AssociativeRules</a>{t("programmingProject:AssociativeRules")}
-                        </Col>
+                        <ul>
+                            <li><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</li>
+                            <li><a href="https://github.com/DoubleCookies/stats4wiki" target="_blank" rel="noopener noreferrer">stats4wiki</a>{t("programmingProject:stats4wiki")}</li>
+                            <li><a href="https://github.com/DoubleCookies/StringSwap" target="_blank" rel="noopener noreferrer">StringSwap</a>{t("programmingProject:StringSwap")}</li>
+                            <li><a href="https://github.com/DoubleCookies/MazeGeneratorAndSolver" target="_blank" rel="noopener noreferrer">MazeGeneratorAndSolver</a>{t("programmingProject:MazeGeneratorAndSolver")}</li>
+                            <li><a href="https://github.com/DoubleCookies/AssociativeRules" target="_blank" rel="noopener noreferrer">AssociativeRules</a>{t("programmingProject:AssociativeRules")}</li>
+                        </ul>
                     </Row>
+                    <Row>
+                        <Col span={24}><div className="headings text-miniMedium">{t("githubStats")}</div></Col>
+                    </Row>
+                    <Divider className="gradient-border-small" />
                     <GitHubCalendar username="DoubleCookies">
                         <ReactTooltip delayShow={50} html />
                     </GitHubCalendar>
