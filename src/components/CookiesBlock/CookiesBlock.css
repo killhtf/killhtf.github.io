@@ -3,6 +3,16 @@
     padding: 24px 12px 24px 12px;
 }
 
+.myImgWrapper {
+    height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .myImgWrapper {
+        height: 200px;
+    }
+}
+
 .myImg {
     height: auto;
     width: 100%;

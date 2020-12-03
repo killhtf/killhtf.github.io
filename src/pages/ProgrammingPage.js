@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Divider, Layout, Row} from 'antd';
+import {Col, Divider, Layout, List, Row} from 'antd';
 import HeaderNavigation from '../components/HeaderNavigation/HeaderNavigation';
 import FooterNavigation from '../components/FooterNavigation/FooterNavigation';
 import CookiesBlock from '../components/CookiesBlock/CookiesBlock';
@@ -11,6 +11,13 @@ const {Header, Content, Footer} = Layout;
 
 function ProgrammingPage() {
     const {t} = useTranslation(['programmingSection']);
+    const data = [
+        {title: 'GdStatistics', description: t("programmingProject:GDStatistics")},
+        {title: 'stats4wiki', description: t("programmingProject:stats4wiki")},
+        {title: 'StringSwap', description: t("programmingProject:StringSwap")},
+        {title: 'MazeGeneratorAndSolver', description: t("programmingProject:MazeGeneratorAndSolver")},
+        {title: 'AssociativeRules', description: t("programmingProject:AssociativeRules")},
+        ];
     return (
         <Layout className="layout">
             <Header>
@@ -74,15 +81,25 @@ function ProgrammingPage() {
                         <Col span={24}><div className="headings text-miniMedium">Open source</div></Col>
                     </Row>
                     <Divider className="gradient-border-small" />
-                    <Row>
+                    <Row gutter={[0, 12]}>
                         <Col span={24}>{t("programmingProject:intro")}</Col>
-                        <ul>
-                            <li><a href="https://github.com/DoubleCookies/GDStatistics" target="_blank" rel="noopener noreferrer">GDStatistics</a>{t("programmingProject:GDStatistics")}</li>
-                            <li><a href="https://github.com/DoubleCookies/stats4wiki" target="_blank" rel="noopener noreferrer">stats4wiki</a>{t("programmingProject:stats4wiki")}</li>
-                            <li><a href="https://github.com/DoubleCookies/StringSwap" target="_blank" rel="noopener noreferrer">StringSwap</a>{t("programmingProject:StringSwap")}</li>
-                            <li><a href="https://github.com/DoubleCookies/MazeGeneratorAndSolver" target="_blank" rel="noopener noreferrer">MazeGeneratorAndSolver</a>{t("programmingProject:MazeGeneratorAndSolver")}</li>
-                            <li><a href="https://github.com/DoubleCookies/AssociativeRules" target="_blank" rel="noopener noreferrer">AssociativeRules</a>{t("programmingProject:AssociativeRules")}</li>
-                        </ul>
+                    </Row>
+                    <Row>
+                        <Col span={24}>
+                            <List
+                                bordered
+                                itemLayout="vertical"
+                                dataSource={data}
+                                renderItem={item => (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            title={<a href="https://ant.design">{item.title}</a>}
+                                            description={item.description}
+                                        />
+                                    </List.Item>
+                                )}
+                                />
+                        </Col>
                     </Row>
                     <Row>
                         <Col span={24}><div className="headings text-miniMedium">{t("githubStats")}</div></Col>
