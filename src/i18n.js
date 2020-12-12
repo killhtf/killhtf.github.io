@@ -27,8 +27,36 @@ i18n
         resources: {
             en: {
                 mainPage: {
-                    title: 'hello from namespace 1'
-                }
+                    mainTitle: 'About me',
+                    cookies: 'DoubleCookies',
+                    programmingTitle: 'Programming',
+                    programmingIntro: 'Now programming is my main activity. I\'m Java-developer with 3 years of experience; ' +
+                        'familiar with technologies like: Spring Boot, JUnit, БД (SQL and NoSQL). ' +
+                        'I have experience in creating new large project and in reworking some existing projects. ' +
+                        'Also I have experience with JS (React, Typescript), HTML and CSS.',
+                    programmingOpenSource: 'Sometimes I make contribution in Open Source — I have my own repositories on GitHub and contribution in other projects.',
+                    programmingPreLink: 'More information about me can be found in ',
+                    programmingLink: 'this section.',
+                    fandomTitle: 'FANDOM',
+                    fandomIntro: 'FANDOM is one of the biggest wiki hosting and fan-site in the world. I actively edit on it since 2016. ' +
+                        'The main direction is to maintain the technical part of project (templates, CSS, JS, even Lua modules); also I improve articles and write new ones.',
+                    fandomVanguard: 'Since 2019 I\'m Vanguard member - team which helps make Fandom\'s content available on the widest possible range of devices.',
+                    fandomPreLink: 'More details about me you can find ',
+                    fandomLink: 'here.',
+                    hobbiesTitle: 'Hobbies',
+                    hobbiesLink: 'Photography, books, chess and other things!',
+                    intro: 'Hello! I am DoubleCookies — person who loves programming, eating cookies, check statistics and many other things!' +
+                        'More details about me and my activities can be found below.',
+                },
+                aboutThisPage: {
+                    title: 'This page uses following technologies:',
+                    antd: 'For most of components (menu, pictures, even this popover)',
+                    createReactApp: 'Starting point for project',
+                    ghPages: 'This page host',
+                    i18next: 'For internationalization',
+                    reactRouter: 'For navigation',
+                    cookie: 'I\'m smart cookie. Understand those things.',
+                },
             },
             ru: {
                 mainPage: {
@@ -43,10 +71,10 @@ i18n
                     programmingPreLink: 'Больше информации обо мне можно найти в ',
                     programmingLink: 'соответствующем разделе.',
                     fandomTitle: 'FANDOM',
-                    fandomIntro: 'FANDOM — это один из крупнейших вики-хостингов. Активно редактирую на нём начиная с ' +
+                    fandomIntro: 'FANDOM — это один из крупнейших вики-хостингов и сайтов для фанатов. Активно редактирую на нём начиная с ' +
                         '2016 года. Основным направлением является поддержание технической части википроектов (шаблоны, CSS, JS, в редких случаях — Lua); помимо этого ' +
                         'дорабатываю имеющиеся статьи и иногда создаю новые.',
-                    fandomVanguard: 'С 2019 года являюсь членом команды Vanguard, которая помогает википроектам переходить на новые технологии.',
+                    fandomVanguard: 'С 2019 года являюсь членом команды Vanguard, которая делает контент ФЭНДОМа доступным для как можно большего количества устройсв.',
                     fandomPreLink: 'Подробнее о моей деятельности написано ',
                     fandomLink: 'здесь.',
                     hobbiesTitle: 'Увлечения',
