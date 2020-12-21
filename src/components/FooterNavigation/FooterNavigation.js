@@ -1,7 +1,7 @@
 import React from 'react';
 import {GithubOutlined, TwitterOutlined} from '@ant-design/icons';
 import FandomIcon from '../FandomIcon/FandomIcon';
-import {Image, List, Popover} from 'antd';
+import {List, Popover} from 'antd';
 import chocolateCookie from '../../images/ChocoCookie.png';
 import './FooterNavigation.css';
 import {useTranslation} from 'react-i18next';
@@ -55,7 +55,7 @@ function FooterNavigation() {
     );
 
     return(
-        <div style={{position: 'relative'}}>
+        <div className="footerBlock" style={{position: 'relative'}}>
             <div className="footerIcons">
                 <a href="https://github.com/DoubleCookies" target="_blank" rel="noopener noreferrer"><GithubOutlined style={{fontSize: 32}} /></a>
                 <a href="https://twitter.com/BigDoubleCookie" target="_blank" rel="noopener noreferrer"><TwitterOutlined style={{fontSize: 32}} /></a>
@@ -65,9 +65,8 @@ function FooterNavigation() {
                 Copyright © 2020 Igor Nemytyshev
             </div>
             <Popover content={content} style={{paddingRight: 20}} placement="topRight">
-                <Image preview={false} src={chocolateCookie} alt={"ChocolateCookie"} className={"footerImg"} />
+                <img src={chocolateCookie} alt={"ChocolateCookie"} className={"footerImg"} />
             </Popover>
-
         </div>
     );
 }
